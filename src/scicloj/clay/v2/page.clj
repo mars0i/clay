@@ -26,8 +26,6 @@
                   ["https://cdn.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"]}}
    :cytoscape {:js {:from-local-copy
                     ["https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"]}}
-   :plotly {:js {:from-local-copy
-                 ["https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.20.0/plotly.min.js"]}}
    :katex {:js {:from-local-copy
                 ["https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"]}
            :css {:from-the-web
@@ -36,6 +34,8 @@
                  ;; which would need a bit more care
                  ;; (see https://katex.org/docs/font.html)
                  ["https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"]}}
+   :plotly {:js {:from-local-copy
+                 ["https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.20.0/plotly.min.js"]}}
    :three-d-mol {:js {:from-the-web
                       ["https://cdnjs.cloudflare.com/ajax/libs/3Dmol/1.5.3/3Dmol.min.js"]}}
    :leaflet {;; fetching Leaflet from the web
