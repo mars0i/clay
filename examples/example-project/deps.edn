@@ -1,2 +1,8 @@
-{:deps {org.scicloj/clay {:mvn/version "RELEASE"}}
+{:deps {;org.scicloj/clay {:mvn/version "RELEASE"}
+        org.scicloj/clay {:local/root "/Users/marshall/docs/src/clojure/clay/target/org.scicloj/clay-2-beta31.1.jar"}
+        org.scicloj/kindly {:mvn/version "4-beta15"}
+        scicloj/tablecloth {:mvn/version "7.042"}
+        org.scicloj/tableplot {:mvn/version "1-beta11"}
+        ;org.scicloj/noj {:mvn/version "2-beta8"}
+       }
  :paths ["src" "notebooks"]}
