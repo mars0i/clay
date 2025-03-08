@@ -26,14 +26,17 @@
                   ["https://cdn.jsdelivr.net/npm/echarts@5.4.1/dist/echarts.min.js"]}}
    :cytoscape {:js {:from-local-copy
                     ["https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js"]}}
-   :katex {:js {:from-local-copy
+   :katex {;:js {:from-the-web
+           ;     ["https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML"]}
+           :js {:from-local-copy
                 ["https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.js"]}
            :css {:from-the-web
                  ;; fetching the KaTeX css from the web
                  ;; to avoid fetching the fonts locally,
                  ;; which would need a bit more care
                  ;; (see https://katex.org/docs/font.html)
-                 ["https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"]}}
+                 ["https://cdn.jsdelivr.net/npm/katex@0.16.10/dist/katex.min.css"]}
+           }
    :plotly {:js {:from-local-copy
                  ["https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.20.0/plotly.min.js"]}}
    :three-d-mol {:js {:from-the-web
