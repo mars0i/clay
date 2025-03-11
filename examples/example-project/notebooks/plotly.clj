@@ -5,8 +5,10 @@
             [tablecloth.api :as tc]))
 
 (comment
-  (clay/make! {:source-path "notebooks/mwe.clj"})
+  (clay/make! {:source-path "notebooks/plotly.clj"})
 )
+
+;; $x$
 
 (-> (tc/concat
       (tc/dataset {:x [0 1], :y [0 1], :fun "$y=x^2$"})
